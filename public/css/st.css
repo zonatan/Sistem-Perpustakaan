@@ -1,0 +1,228 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e5ec;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 220px;
+    background: linear-gradient(135deg, #2b2e4a, #2f365f);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    color: #fff;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.sidebar .navbar-brand {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e0e5ec;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+    transition: font-size 0.3s ease;
+}
+
+.sidebar:hover .navbar-brand {
+    font-size: 1.4rem;
+}
+
+.sidebar ul.navbar-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-link {
+    color: #cfd2e6;
+    font-size: 1rem;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #50597b;
+    color: #00aaff;
+}
+
+.sidebar .nav-link.active {
+    background-color: #00aaff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+    margin-right: 12px;
+    color: #00aaff;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover i {
+    transform: scale(1.2);
+}
+
+.container {
+    margin-left: 230px;
+    padding: 25px;
+    width: 100%;
+    transition: margin-left 0.3s ease;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 15px 20px;
+}
+
+.sidebar:hover ~ .container {
+    margin-left: 260px;
+}
+
+/* Submenu styling */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.submenu .submenu-link {
+    color: #cfd2e6;
+    font-size: 0.9rem;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.submenu .submenu-link:hover {
+    background-color: #50597b;
+    color: #00aaff;
+}
+
+
+
+
+.table {
+width: 100%;
+border-collapse: collapse;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+margin-top: 20px; 
+}
+
+/* Header Tabel */
+.table thead {
+background-color: #f4f4f8;
+font-weight: 600;
+text-transform: uppercase;
+color: #555;
+}
+
+.table thead th {
+padding: 16px;
+font-size: 0.9rem;
+border-bottom: 2px solid #ddd;
+text-align: left;
+}
+
+
+/* Isi Tabel */
+.table tbody tr {
+transition: background-color 0.2s;
+}
+
+
+
+.table tbody th,
+.table tbody td {
+padding: 12px;
+font-size: 0.9rem;
+color: #333;
+border-bottom: 1px solid #eee;
+
+}
+
+/* Gambar Sampul Buku */
+.table tbody td img {
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+width: 60px; /* Lebar gambar sampul diperbesar sedikit */
+height: auto;
+}
+
+.form-control {
+border: 1px solid #d1d5db;
+padding: 12px;
+border-radius: 10px;
+font-size: 1rem;
+background-color: #f3f4f6;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+border-color: #2563eb;
+box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+.modal-content {
+border-radius: 15px;
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+padding: 20px;
+background-color: #ffffff;
+transition: all 0.3s ease;
+}
+
+.modal-header {
+border-bottom: none;
+text-align: center;
+}
+
+.modal-title {
+color: #2563eb;
+font-weight: 700;
+}
+
+.btn-primary {
+border: none;
+border-radius: 8px;
+padding: 10px 25px;
+font-weight: 600;
+transition: background-color 0.2s;
+}
+.btn-primary:hover {
+background-color: #005bb5;
+}
+
+/* Tabel */
+.table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.btn-close {
+opacity: 0.6;
+transition: opacity 0.3s;
+}
+
+.btn-close:hover {
+opacity: 1;
+}
