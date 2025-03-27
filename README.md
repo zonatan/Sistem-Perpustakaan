@@ -1,1 +1,2 @@
-# Sistem-Perpustakaan dengan konsep MVC dan PBO
+# Sistem-Perpustakaan
+dengan bahasa PHP, konsep MVC dan OOP
